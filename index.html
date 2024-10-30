@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fadeIn {
+            animation: fadeIn 1s forwards;
+        }
+
+        .card {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateX(10px);
+        }
+
+
+        ::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(243, 238, 238);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(8, 233, 128, 0.813);
+    border-radius: 10px;
+}
+
+
+        
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation Section -->
+    <header class="bg-green-600 text-white shadow">
+        <div class="container mx-auto flex justify-between items-center p-5">
+            <h1 class="text-3xl font-bold">YOGA STUDIO</h1>
+            <nav class="space-x-6 hidden md:flex">
+                <a href="#home" class="hover:text-yellow-300">Home</a>
+                <a href="#classes" class="hover:text-yellow-300">Our Classes</a>
+                <a href="#postures" class="hover:text-yellow-300">Yoga Postures</a>
+                <a href="#register" class="hover:text-yellow-300">Register</a>
+                <a href="#ratings" class="hover:text-yellow-300">Ratings</a>
+                <a href="#contact" class="hover:text-yellow-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section with Image -->
+    <section id="home" class="relative h-screen flex items-center justify-center">
+        <img src="https://wallpapercave.com/wp/wp6841590.jpg" alt="Yoga Background" class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <h2 class="text-3xl font-bold text-white z-10">Welcome to Yoga Studio,<br>Experience the best of yoga for mind, body, and soul. <br>“Yoga is the journey of the self, through the self, to the self.”</h2>
+    </section>
+
+    <!-- Card Section -->
+    <section id="classes" class="container mx-auto py-12 px-6">
+        <h2 class="text-4xl font-bold text-center text-green-600 mb-10">Our Classes</h2>
+        <div class="flex overflow-x-auto space-x-4">
+            <!-- Card 1 -->
+            <div class="card bg-white  shadow-lg rounded-lg p-5 w-64">
+                <img src="https://wallpapercave.com/wp/wp6251859.jpg" alt="Yoga Class 1" class="rounded-lg mb-4 ">
+            </div>
+            <!-- Card 2 -->
+            <div class="card bg-white shadow-lg rounded-lg p-5 w-64">
+                <img src="https://wallpaperaccess.com/full/139108.jpg" alt="Yoga Class 2" class="rounded-lg mb-4 ">
+            </div>
+            <!-- Card 3 -->
+            <div class="card bg-white shadow-lg rounded-lg p-5 w-64">
+                <img src="https://wallpaperaccess.com/full/1347302.jpg" alt="Yoga Class 3" class="rounded-lg mb-4 ">
+            </div>
+            <!-- Card 4 -->
+            <div class="card bg-white shadow-lg rounded-lg p-5 w-64">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.PeCyKkv5IcAVlsuyT-DwxgHaEo&pid=Api&P=0&h=180
+                " alt="Yoga Class 4" class="rounded-lg mb-4 ">
+            </div>
+            <!-- Card 5 -->
+            <div class="card bg-white shadow-lg rounded-lg p-5 w-64">
+                <img src="https://verv.com/wp-content/uploads/2018/12/seiza_pose-e1545294218881.jpg" alt="Yoga Class 5" class="rounded-lg mb-4 ">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Yoga Postures Section -->
+    <section id="postures" class="container mx-auto py-12 px-6">
+        <h2 class="text-4xl font-bold text-center text-green-600 mb-10">Yoga Postures</h2>
+        <div class="flex flex-col md:flex-row mb-10">
+            <div class="flex-1 fadeIn">
+                <img src="https://www.vinyasayogaashram.com/blog/wp-content/uploads/2021/04/dhanurasana.jpg" alt="Pose 1" class="rounded-lg mb-4">
+            </div>
+            <div class="flex-1 flex items-center">
+                <p> Dhanurasana, or Bow Pose : is a yoga pose where you lie on your stomach and lift your legs and chest while holding your ankles. It helps strengthen the back and improve flexibility</p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row-reverse mb-10">
+            <div class="flex-1 fadeIn">
+                <img src="https://patanjaleeyoga.com/wp-content/uploads/2024/01/1-7.webp" alt="Pose 2" class="rounded-lg mb-4">
+            </div>
+            <div class="flex-1 flex items-center">
+                <p>Ustrasana, or Camel Pose : is a yoga pose where you kneel and lean back to touch your heels. It helps stretch the front of your body and improves flexibility in the spine.</p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row mb-10">
+            <div class="flex-1 fadeIn">
+                <img src="https://femina.wwmindia.com/content/2021/feb/yoga-011612349368.jpg" alt="Pose 3" class="rounded-lg mb-4">
+            </div>
+            <div class="flex-1 flex items-center">
+                <p>Vrksasana, or Tree Pose: is a balancing yoga pose where you stand on one leg and place the other foot on your inner thigh. This pose helps improve balance, focus, and strengthens the legs and core.</p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row-reverse">
+            <div class="flex-1 fadeIn">
+                <img src="https://www.theyogacollective.com/wp-content/uploads/2019/10/6982639501950684924_IMG_8612-2-1200x800.jpg" alt="Pose 4" class="rounded-lg mb-4">
+            </div>
+            <div class="flex-1 flex items-center">
+                <p>Setubandhasana, or Bridge Pose : is a yoga pose where you lie on your back, lift your hips, and press your feet and shoulders into the ground. It strengthens the back and legs while opening the chest and stretching the spine.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="bg-gray-200 py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-green-600 mb-10">Register Now</h2>
+            <form class="max-w-md mx-auto">
+                <input type="text" placeholder="Name" class="w-full p-3 mb-4 border border-gray-300 rounded">
+                <input type="text" placeholder="Address" class="w-full p-3 mb-4 border border-gray-300 rounded">
+                <input type="tel" placeholder="Contact No." class="w-full p-3 mb-4 border border-gray-300 rounded">
+                <button type="submit" class="w-full bg-green-600 text-white p-3 rounded hover:bg-green-700 transition">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Ratings Section -->
+    <section id="ratings" class="container mx-auto py-12 px-6">
+        <h2 class="text-4xl font-bold text-center text-green-600 mb-10">Ratings</h2>
+        <div class="flex justify-center mb-5">
+            <span class="text-yellow-500 text-4xl">★★★★★</span>
+        </div>
+        <div class="text-center mb-8">
+            <p class="italic">"Yoga at this studio has changed my life. The instructors are amazing!"</p>
+            <p class="font-semibold">- Sarah J.</p>
+        </div>
+        <div class="text-center">
+            <p class="italic">"A wonderful experience! I feel more balanced and centered after each class."</p>
+            <p class="font-semibold">- John D.</p>
+        </div>
+    </section>
+
+     <!-- Footer Section -->
+     <footer id="contact" class="bg-green-600 text-white py-8">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-semibold">Contact Us</h3>
+            <p class="mt-4">Phone: 8089901670 | Email: anjana@yogastudio.com</p>
+            <div class="flex justify-center space-x-6 mt-4 text-2xl">
+                <a href="https://www.linkedin.com/in/anjana2002pm" target="_blank" class="hover:text-yellow-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anjana2002pm" target="_blank" class="hover:text-yellow-300">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anjana2002pm" target="_blank" class="hover:text-yellow-300">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anjana2002pm" target="_blank" class="hover:text-yellow-300">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <p class="mt-6">&copy; 2024 Yoga Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
